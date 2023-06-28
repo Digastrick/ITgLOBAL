@@ -1,0 +1,13 @@
+.select-country{
+    position: fixed;
+    top:30px;
+    left:30px;
+    &__item{
+        &::before{
+            content: url('../img/IconRU.svg');
+            position: absolute;
+            right: 0;
+            width: 16px;
+        }
+    }
+}
