@@ -18,6 +18,7 @@
     &__item{
         @include titleItem();
         position: relative;
+        cursor: pointer;
      &::before{
         content: url('../../src/img/arrow.svg');
         position: absolute;

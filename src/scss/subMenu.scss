@@ -27,6 +27,7 @@
     @include subItem();
     background-color: white;
     position: relative;
+    cursor: pointer;
     &::before{
         content: url('../../src/img/arrow.svg');
         position: absolute;

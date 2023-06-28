@@ -111,6 +111,7 @@ body {
   max-height: 32px;
   height: 100%;
   position: relative;
+  cursor: pointer;
 }
 .menu__item::before {
   content: url("../../src/img/arrow.svg");
@@ -191,6 +192,7 @@ body {
   height: 100%;
   background-color: white;
   position: relative;
+  cursor: pointer;
 }
 .submenu__sub-item::before {
   content: url("../../src/img/arrow.svg");
@@ -247,6 +249,7 @@ body {
   margin-top: 20px;
   max-width: 300px;
   width: 100%;
+  cursor: pointer;
 }
 .menu-list__sub-item-title {
   font-family: "Golos Text", sans-serif;
@@ -297,14 +300,130 @@ body {
   height: 100%;
 }
 
-.select-country {
+.select {
+  display: flex;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+  z-index: 10;
 }
-.select-country__item::before {
-  content: url("../img/IconRU.svg");
+.select__header {
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+}
+.select__current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  font-family: "Golos Text", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+  max-width: 300px;
+  width: 100vw;
+  max-height: 32px;
+  height: 100%;
+}
+.select__current::after {
+  content: url("../../src/img/arrow.svg");
+  rotate: 90deg;
   position: absolute;
   right: 0;
   width: 16px;
+}
+.select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  text-align: center;
+}
+.select__body {
+  display: none;
+  position: absolute;
+  top: 100%;
+  max-width: 180px !important;
+}
+.select__title {
+  font-family: "Golos Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  padding-top: 20px;
+  max-width: 300px;
+  width: 100vw;
+  max-height: 32px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 180px !important;
+}
+.select__item {
+  cursor: pointer;
+  max-height: 20px;
+  height: 100%;
+  max-width: 180px !important;
+  font-family: "Golos Text", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+  max-width: 300px;
+  width: 100vw;
+  max-height: 32px;
+  height: 100%;
+}
+
+.center {
+  position: relative;
+  left: auto;
+}
+
+.is-active {
+  box-shadow: 3px 3px 3px 3px #74899B;
+  opacity: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.IconUSA::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconUSA.svg");
+}
+
+.IconRU::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconRU.svg");
+}
+
+.IconBY::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconBY.svg");
+}
+
+.IconKZ::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconKZ.svg");
+}
+
+.IconNL::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconNL.svg");
+}
+
+.IconTR::before {
+  margin-right: 10px;
+  content: url("../../src/img/IconTR.svg");
 }

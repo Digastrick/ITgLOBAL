@@ -23,6 +23,7 @@
         margin-top: 20px;
         max-width: 300px;
         width: 100%;
+        cursor: pointer;
         &-title{
             @include subItem();
             
